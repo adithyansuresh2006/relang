@@ -10,16 +10,16 @@ ASCII aquarium / sea animation in your terminal.
 
 ## Prerequisites
 
-- Perl 5+
+- Python 3
 
 ## Build
 
-No build required — it's a Perl script.
+No build required — it's a Python 3 script.
 
 ## Run
 
 ```bash
-perl asciiquarium/source/asciiquarium
+python3 asciiquarium/target/asciiquarium.py
 ```
 
 ## Validate
@@ -30,5 +30,6 @@ Volunteer-verified — demonstrate the program working during review.
 
 ```bash
 source setup.sh
-relang "perl asciiquarium/source/asciiquarium"
+relang "python3 asciiquarium/target/asciiquarium.py"
 ```
+

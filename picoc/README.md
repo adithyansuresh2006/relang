@@ -16,33 +16,32 @@ C interpreter — executes a subset of the C language.
 
 ## Prerequisites
 
-Your target language toolchain (whatever your implementation needs).
+- Python 3
 
 ## Build
 
-Build instructions for your target language implementation in `target/`.
+No build required — it's a Python 3 script.
 
 ## Run
 
 ```bash
-<your-program-command>
+python3 picoc/target/picoc.py
 ```
-
-Replace `<your-program-command>` with the command to run your implementation in `target/`.
 
 ## Validate (local)
 
 ```bash
-cd relang && python3 validate.py "../target/<your-program-command>"
+cd relang && python3 validate.py "../target/picoc.py"
 ```
 
 ## Submit
 
 ```bash
-source ../setup.sh
-relang "<your-program-command>"
+source setup.sh
+relang "python3 picoc/target/picoc.py"
 ```
 
 > ⚠️ **Do NOT submit the source reference implementation.**  
 > Only implement and submit your code from `target/`.  
 > Submitting `source/` may result in **disqualification**.
+
